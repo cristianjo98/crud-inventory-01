@@ -54,11 +54,9 @@ class Functions():
         pos_x = self.root.winfo_x()
         pos_y = self.root.winfo_y()
         
-        path_icono = os.path.join(os.path.dirname(__file__),"..", "Images", "logo.ico")
         popup_w = tk.Toplevel(master=self.my_frame)
         popup_w.geometry(f"250x120+{pos_x}+{pos_y + 50}")
         popup_w.resizable(False, False)
-        popup_w.iconbitmap(path_icono)
 
         # LABEL_SERIAL 300,150
         label_serialCode = ttk.Label(
