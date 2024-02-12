@@ -25,8 +25,6 @@ class View():
     def __init__(self, root, model):
 
         self.root = root
-        self.path_icono = os.path.join(os.path.dirname(__file__),
-                                       "..", "Images", "logo.ico")
         self.my_frame = ttk.Frame(master=self.root)
         self.table = ttk.Treeview(master=self.my_frame)
 
@@ -65,7 +63,6 @@ class View():
     def config_root(self):
         self.root.title("Inventario de medios de almacenamiento")
         self.root.geometry(f"{self.__width}x{self.__height}+0+0")
-        self.root.iconbitmap(self.path_icono)
         self.my_frame.pack(fill=tk.BOTH, expand=True)
 
     def menu_root(self):
