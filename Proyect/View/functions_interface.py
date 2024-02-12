@@ -58,7 +58,6 @@ class Functions():
         popup_w.geometry(f"250x120+{pos_x}+{pos_y + 50}")
         popup_w.resizable(False, False)
 
-        # LABEL_SERIAL 300,150
         label_serialCode = ttk.Label(
             master=popup_w, text="Ingresar serial - codigo:", font=(12), background="#F0F0F0")
         label_serialCode.grid(row=0, column=0, padx=40, pady=35)
