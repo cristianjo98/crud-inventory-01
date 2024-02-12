@@ -1,4 +1,3 @@
-import os
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -101,8 +100,6 @@ class Functions():
         text = """
         Inventario de medios de almacenamiento
         
-        Ifx Networks
-        Area: Data center
         Versión: 1.0
         Tecnologia: Python/Tkinter
         """
